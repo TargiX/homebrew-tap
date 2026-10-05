@@ -1,6 +1,6 @@
 cask "vibevac" do
-  version "0.1.0"
-  sha256 "dc97e6cbf9c31e828f0f68d3b593f3c03235706098b4ab677df179dec2099e09"
+  version "0.2.0"
+  sha256 "7203a4c2298dc2a7363d838379b7623c47c77fb02240f134dc0869aac59d1bae"
 
   url "https://github.com/TargiX/vibevac/releases/download/v#{version}/VibeVac_#{version}_universal.dmg"
   name "VibeVac"
@@ -12,7 +12,7 @@ cask "vibevac" do
     strategy :github_releases
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "VibeVac.app"
 
